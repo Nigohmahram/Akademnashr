@@ -8,6 +8,7 @@ body{
 }
 *{
   padding: 0;
+  margin: 0;
 }
 *:focus{
   outline: 2px solid #ff7500;
@@ -23,7 +24,11 @@ body{
   padding-bottom: 16px;
   background-color: #fff;
 }
+.logo-link img{
+  display: block;
+}
 .logo-link{
+  display: block;
   transition: opacity 0.4s ease;
 }
 .logo-link:hover{
@@ -90,6 +95,8 @@ body{
   height: 3px;
   border: none;
   background-color: #ff7500;
+  margin: 0;
+  margin-bottom: 40px;
 }
 .hero-img{
   width: 510px;
@@ -100,10 +107,17 @@ body{
   font-size: 40px;
   line-height: 1.2;
   font-family: "Roboto Condensed", "Arial", sans-serif;
+  margin: 0;
+  margin-bottom: 24px;
 
 }
-
+.hero-text{
+  margin-top: 0;
+  margin-bottom: 32px;
+}
 .features-heading{
+  margin-top: 0;
+  margin-bottom: 72px;
   width: 440px;
   font-size: 72px;
   line-height: 1.2;
@@ -116,10 +130,14 @@ body{
 
 .feature{
   width: 340px;
+  margin-right: 40px;
+}
+.feature:last-child{
+  margin-right: 0;
 }
 .features-list{
+  margin: 0;
   display: flex;
-  justify-content: space-between;
   padding: 0;
 }
 .feature-icon-wrapper{
@@ -152,9 +170,21 @@ body{
   font-size: 40px;
   line-height: 48px;
   font-family: "Roboto Condensed", "Roboto", "Arial" sans-serif;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 .promo-highlight{
   color: #ff7500;
+}
+.promo-info-wrapper{
+  margin-bottom: 24px;
+}
+.promo-text{
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.promo-text:last-child{
+  margin-bottom: 0;
 }
 .promo-img{
   width: 440px;
@@ -175,6 +205,7 @@ body{
   height: 2px;
   background-color: rgba(37, 36, 32, 0.5);
   border: 0;
+  margin: 40px 0 64px ;
 }
 ul{
   list-style: none;
@@ -186,6 +217,12 @@ ul a{
 .sitenav-list ul{
   list-style: none;
   display: flex;
+  padding: 0;
+  margin: 0;
+  margin-right: 32px;
+}
+.sitenav-item{
+  margin-right: 32px;
 }
 .site-footer ul{
   border: 0;
@@ -195,6 +232,13 @@ ul a{
 .site-footer-link-list{
   width: 224px;
   line-height: 19px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  margin-right: 68px;
+}
+.site-footer-link-list:last-child{
+  margin-right: 0;
 }
 .site-footer-link-list a{
   text-decoration: none;
@@ -212,9 +256,20 @@ ul a{
   display: flex;
   align-items: center;
   padding: 0;
+  margin: 0;
+}
+.site-footer-socials li{
+  margin-right: 16px;
+}
+.site-footer-socials li:last-child{
+  margin-right: 0;
+}
+.site-footer-socials svg{
+  display: block;
 }
 .site-footer-socials a{
   color: #252420;
+  display: block;
   transition: color 0.3s ease, hover 0.3s ease, active 0.3s ease;
 }
 .site-footer-socials a:hover{
