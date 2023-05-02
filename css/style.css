@@ -77,6 +77,7 @@ img {
 .logo-link {
 
   transition: opacity 0.4s ease;
+
 }
 
 .logo-link:hover {
@@ -295,29 +296,33 @@ img {
   overflow: scroll;
 }
 
-.site-footer {
+.site-footer{
   background-color: #f8f8f8;
   padding: 56px 0;
 }
 
-.site-footer-top {
+.site-footer__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.site-footer-divider {
+.site-footer__logo-link{
+  margin-right: 36px;
+}
+
+.site-footer__divider {
   height: 2px;
   background-color: rgba(37, 36, 32, 0.5);
   border: 0;
   margin: 40px 0 64px;
 }
 
-ul {
+.socials__item {
   list-style: none;
 }
 
-ul a {
+.socials__item .socials__link {
   text-decoration: none;
   color: var(--heading-color);
 }
@@ -326,7 +331,7 @@ ul a {
   display: flex;
 }
 
-.sitenav-list ul {
+.sitenav-list .socials__item {
   display: flex;
   list-style: none;
   display: flex;
@@ -339,13 +344,13 @@ ul a {
   margin-right: 32px;
 }
 
-.site-footer ul {
+.site-footer__list {
   border: 0;
   list-style: none;
 
 }
 
-.site-footer-link-list {
+.site-footer__link-list {
   width: 224px;
   line-height: 19px;
   padding: 0;
@@ -354,66 +359,130 @@ ul a {
   margin-right: 68px;
 }
 
-.site-footer-link-list:last-child {
+.site-footer__link-list:last-child {
   margin-right: 0;
 }
 
-.site-footer-link-list a {
+.site-footer__link-list .socials__link {
   text-decoration: none;
   color: var(--heading-color);
   transition: color 0.4s ease, active 0.4s ease;
 }
 
-.site-footer-link-list a:hover {
+.site-footer__link-list .socials__link:hover {
   color: var(--button-color);
 }
 
-.site-footer-link-list a:active {
+.site-footer__link-list .socials__link:active {
   opacity: 0.6;
 }
 
-.site-footer-link-list li {
+.site-footer__link-list .socials__item {
   margin-bottom: 16px;
 }
 
-.site-footer-link-list li:last-child {
+.site-footer__link-list .socials__item:last-child {
   margin-bottom: 0;
 }
 
-.site-footer-socials {
+.site-footer__item {
   display: flex;
   align-items: center;
   padding: 0;
   margin: 0;
 }
 
-.site-footer-socials li {
+.site-footer__item .socials__item {
   margin-right: 16px;
 }
 
-.site-footer-socials li:last-child {
+.site-footer__socials .socials__item:last-child {
   margin-right: 0;
 }
 
-.site-footer-socials svg {
+.site-footer__socials svg {
   display: block;
 }
 
-.site-footer-socials a {
+.site-footer__socials .socials__link {
   color: var(--heading-color);
   display: block;
   transition: color 0.3s ease, hover 0.3s ease, active 0.3s ease;
 }
 
-.site-footer-socials a:hover {
+.site-footer__socials .socials__link:hover {
   color: var(--button-color);
 }
 
-.site-footer-socials a:active {
+.site-footer__socials .socials__link:active {
   opacity: 0.6;
 }
 
 
-.site-footer-bottom {
+.site-footer__bottom {
   display: flex;
+}
+
+
+@media only screen and  (max-width: 1140px){
+  .site-footer__link-list{
+    width: 20.36%;
+    margin-right: 6.18%;
+  }
+}
+@media only screen and  (max-width: 760px){
+  .site-footer__bottom{
+    flex-wrap: wrap;
+  }
+  .site-footer__link-list{
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 36px;
+  }
+  .site-footer__link-list:last-child{
+    margin-right: 5%;
+  }
+  .site-footer__link-list:nth-child(3){
+    margin-right: 0;
+  }
+}
+@media only screen and  (max-width: 600px){
+  .site-footer__link-list{
+    width: 46%;
+    margin-right: 8%;
+  }
+  .site-footer__link-list:nth-child(3){
+    margin-right: 8%;
+  }
+  .site-footer__link-list:nth-child(even){
+    margin-right: 0;
+  }
+}
+@media only screen and  (max-width: 530px){
+  .site-footer{
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  .site-footer__top{
+    flex-direction: column;
+  }
+  .site-footer__logo-link{
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
+@media only screen and  (max-width: 400px){
+  .site-footer__link-list{
+    width: 100%;
+    margin-right: 0%;
+  }
+  .site-footer__link-list:last-child{
+    margin-bottom: 0;
+  }
+  .site-footer__link-list:nth-child(3){
+    margin-right: 0;
+  }
+  .site-footer__link-list:nth-child(even){
+    margin-right: 0;
+  }
 }
