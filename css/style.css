@@ -518,6 +518,7 @@ img {
     margin-right: 0;
   }
   .site-footer{
+    width: 100%;
     padding-top: 36px;
     padding-bottom: 36px;
   }
@@ -536,6 +537,9 @@ img {
   }
   .features-heading{
     font-size: 36px;
+  }
+  .site-footer{
+    width: 100%;
   }
   .site-footer__link-list{
     width: 100%;
