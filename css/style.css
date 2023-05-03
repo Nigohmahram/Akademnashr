@@ -101,6 +101,7 @@ img {
   line-height: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  list-style: none;
   text-decoration: none;
   color: #000;
   transition: color 0.4s ease, opacity 0.4s ease;
@@ -330,6 +331,7 @@ img {
 
 .sitenav-list {
   display: flex;
+  list-style: none;
 }
 
 .sitenav-list .socials__item {
@@ -446,6 +448,20 @@ img {
 }
 /* FEATURES */
 @media only screen and  (max-width: 1000px){
+  .main-link{
+    white-space: nowrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .site-header-container{
+    flex-direction: column;
+  }
+  .site-header-actions{
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 12px;
+  }
   .hero-content{
     flex-grow: 1;
     margin-right: 60px;
@@ -502,6 +518,17 @@ img {
   }
 }
 @media only screen and  (max-width: 760px){
+  .site-header-actions{
+    flex-direction: column;
+  }
+  .site-header-actions nav{
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .sitenav-list{
+    margin-right: 0;
+    justify-content: center;
+  }
   .hero-container{
     flex-direction: column-reverse;
   }
@@ -584,6 +611,14 @@ img {
   }
 }
 @media only screen and  (max-width: 530px){
+  .sitenav-list{
+    flex-wrap: wrap;
+  }
+  .sitenav-item{
+    width: 50%;
+    margin-right: 0;
+    text-align: start;
+  }
   .orange-line{
     margin-left: auto;
     margin-right: auto;
@@ -655,4 +690,18 @@ img {
   .site-footer__link-list:nth-child(even){
     margin-right: 0;
   }
+}
+  @media only screen and  (max-width: 350px){
+    .logo-link img{
+      width: 100%;
+      height: auto;
+    }
+    .sitenav-item{
+      width: 100%;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .sitenav-item:last-child{
+      margin-bottom: 0;
+    }
 }
